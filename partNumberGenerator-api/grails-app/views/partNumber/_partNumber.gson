@@ -1,0 +1,13 @@
+import partnumbergenerator.PartNumber
+
+model {
+    PartNumber partNumber
+}
+
+json {
+    id partNumber?.id
+    customerNumber partNumber?.customer?.internalId?.toString()?.padLeft(3, '0')
+    number partNumber?.internalId?.toString()?.padLeft(5,'0')
+    revision partNumber?.revision?.toString()?.padLeft(2,'0')
+    ean13Number partNumber?.calculateEAN13WithCheckSum()?.toString()?.padLeft( 13, '0')
+}

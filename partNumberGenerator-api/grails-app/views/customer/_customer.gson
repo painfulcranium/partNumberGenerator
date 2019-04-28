@@ -1,0 +1,11 @@
+import partnumbergenerator.Customer
+
+model {
+    Customer customer
+}
+
+json {
+    id customer.id
+    name customer.name
+    customerNumber customer.internalId
+}

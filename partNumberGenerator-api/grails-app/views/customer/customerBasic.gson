@@ -1,0 +1,7 @@
+import partnumbergenerator.Customer
+
+model {
+    Collection<Customer> customerList = []
+}
+
+json tmpl.customer(customerList)

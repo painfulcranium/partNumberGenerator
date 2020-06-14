@@ -10,6 +10,8 @@ The app will automatically reload if you change any of the source files.
 
 ## Assumptions
 
+You have Node 8.x or 10.x installed (This application needs to be updated to run under Node 12.x+).
+
 You have pulled this application code, and run `npm install` to make sure all libraries are downloaded.
 
 You are running the accompanying REST API application in this project and have started it and it is currently running on http://localhost:8080
